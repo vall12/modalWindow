@@ -1,0 +1,11 @@
+.js-hidden {
+  display:none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.js-shown{
+  display:block;
+  visibility: visible;
+  opacity: 1;
+}

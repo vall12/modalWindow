@@ -1,0 +1,84 @@
+
+.modal {
+  // modal background covers viewport
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: $z-index-modal;
+
+  //positioning modal window
+  justify-content: space-around;
+  align-items: center;
+
+  &__front {
+    position: relative;
+
+    //align-self: ;
+    width: $modal-width;
+    max-width: 100%;
+    //height
+    height: $modal-height;
+    max-height: 100%;
+
+
+    // inner positioning
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    .modal__top,
+    .modal__content,
+    .modal__bottom {
+      padding: 1rem;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    .modal__content {
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+  }
+
+
+  &__close {
+    position: absolute;
+    display: block;
+
+    width: $close-width;
+    height: $close-height;
+
+    &:after {
+      content: "×";
+      font-size: $close-height;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    text-align: center;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+
+  // show-close js action classes
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+
+  &.js-shown {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+  }
+}
+

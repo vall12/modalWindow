@@ -1,0 +1,25 @@
+//main
+$z-index-modal: 2000 !default;
+
+$modal-width: 600px;
+$modal-height: 400px;
+
+
+// other
+$modal-bg-color: rgba(17, 17, 17, 0.85); //rgba(0, 0, 0, 0.7) !default;
+
+$modal-front-bg: white !default;
+$modal-top-bg: white !default;
+$modal-middle-bg: white !default;
+$modal-bottom-bg: white !default;
+$modal-border-color: black !default;
+$modal-box-shadow: .5rem, .5rem, 2rem black !default;
+
+
+$close-width: 28px;
+$close-height: 28px;
+$close-bg-color: #606060 !default;
+$close-bg-color-hover: #000000 !default;
+$close-color: white !default;
+$close-border-color: #e9e5ff !default;
+$close-border-width: 2px !default;

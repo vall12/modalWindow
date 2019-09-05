@@ -1,0 +1,39 @@
+.modal {
+  background: $modal-bg-color;
+
+  //styles
+  //background-color: $modal-front-bg;
+  box-shadow: $modal-box-shadow;
+  border: 1px solid $modal-border-color;
+  border-top-right-radius: 14px;
+
+  .modal__top {
+    border-bottom: 1px solid $modal-border-color;
+  }
+
+  .modal__top {
+    font-size: 1.5em;
+    text-align: center;
+    background-color: $modal-top-bg;
+  }
+
+  .modal__content {
+    background-color: $modal-middle-bg;
+  }
+  .modal__bottom {
+    border-top: 1px solid $modal-border-color;
+    background-color: $modal-bottom-bg;
+  }
+  &__close {
+    &:after {
+      color: $close-color;
+    }
+    background: $close-bg-color;
+    color: $close-color;
+    border-radius: 100%;
+    border: 2px solid $close-border-color;
+    &:hover {
+      background: $close-bg-color-hover;
+    }
+  }
+}
